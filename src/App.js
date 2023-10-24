@@ -1,10 +1,16 @@
-import './App.scss';
-import Stopwatch from './Components/Stopwatch';
+import "./App.scss";
+import Layout from "./Components/Layout";
+import Stopwatch from "./Components/Stopwatch";
 
 function App() {
   return (
     <>
-      <Stopwatch/>
+      <section class="preloader">
+        <div class="spinner">
+          <span class="spinner-rotate"></span>
+        </div>
+      </section>
+      <Layout />
     </>
   );
 }
