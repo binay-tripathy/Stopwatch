@@ -22,14 +22,17 @@ const Stopwatch = () => {
     setHours(0);
     setMinutes(0);
     setSeconds(0);
+    const list = document.getElementById("ul");
+    while (list.hasChildNodes())
+      list.removeChild(list.firstChild);
   };
 
-  const handleLap = () => {
-    let up = document.getElementById('ul');
-    console.log(up);
-    let li = document.createElement('li');
+  const handleLap = async () => {
+    var li = await document.createElement('li');
     li.textContent = `${timelist.hours + 'h : ' + timelist.minutes + 'm : ' + timelist.seconds + 's'}`;
-    up.appendChild(li);
+    var ul = await document.getElementById('ul');
+    console.log(ul);
+    ul.appendChild(li);
 
     // console.log(menu.innerHTML);
   };
@@ -95,7 +98,7 @@ const Stopwatch = () => {
                 <button id='Reset' onClick={handleReset}>Reset</button>
               </div>
               <div className="row">
-                <button id='Lap' onClick={handleLap(timelist)}>Lap</button>
+                <button id='Lap' onClick={handleLap}>Lap</button>
               </div>
             </div>
           </div>

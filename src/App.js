@@ -5,11 +5,11 @@ import Stopwatch from "./Components/Stopwatch";
 function App() {
   return (
     <>
-      <section class="preloader">
-        <div class="spinner">
-          <span class="spinner-rotate"></span>
+      {/* <section className="preloader">
+        <div className="spinner">
+          <span className="spinner-rotate"></span>
         </div>
-      </section>
+      </section> */}
       <Layout />
     </>
   );
