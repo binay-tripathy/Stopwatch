@@ -32,18 +32,40 @@
       display: flex;
       button{
         margin: 0 20px;
+        font-size: 15px;
+        padding: 10px 23px;
+        // zoom: 1.5;
+        border-radius: 5px;
+        &:hover{
+          background-color: lightblue;
+          color: #1c0202;
+        }
       }
     }
   }
 }
 h3{
   text-align: center;
+  // border: 1px solid #ccc;
 }
 .lap-container {
   height: 45vh;
   width: 75%;
   margin: 0 auto;
   overflow-y: auto !important;
+  text-align: center;
+  ul{
+    list-style: none;
+    // border: 1px solid #ccc;
+    margin-right: 25px;
+    display: inline-block;
+    li{
+      margin-bottom: 20px;
+      padding: 0 100px;
+      border: 1px solid #b08169;
+      border-radius: 10px;
+    }
+  }
   &::-webkit-scrollbar-track {
     border-radius: 100px;
     background-color: rgb(19, 1, 1);
